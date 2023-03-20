@@ -1,0 +1,29 @@
+{
+    "name": "treinamentoarco/treinamentophp",
+    "description": "Projeto de treinamento PHP",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Arco\\Teste\\": "src/",
+            "Treinamento\\Teste\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "William Soares",
+            "email": "suporte2@arcoinformatica.com.br"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "clear": [
+            "rm -f composer.lock",
+            "@composer clear-cache"
+        ],
+        "build-app" : [
+            "@clear",
+            "@composer install"
+        ]
+    }
+}
